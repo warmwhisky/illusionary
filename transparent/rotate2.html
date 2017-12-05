@@ -1,0 +1,141 @@
+<style>
+    .main-image {
+        position: absolute;
+  height: 3000px;
+  width :3000px;
+  background-image: url(Trippy05.png);
+  background-size: 100% ; 
+  background-position: center;
+  //background-repeat: no-repeat;
+  overflow: visible;
+  //animation: spin 20s infinite linear;
+}
+    .main-image2 {
+        position: absolute;
+  height: 3000px;
+  width :3000px;
+  background-image: url(Trippy05-flipped.png);
+  background-size: 100% ; 
+  background-position: center;
+  //background-repeat: no-repeat;
+  overflow: visible;
+  //animation: spin 20s infinite linear;
+}
+.rotating {
+  -webkit-animation: rotating-function 21.25s linear infinite reverse;
+     -moz-animation: rotating-function 21.25s linear infinite reverse;
+      -ms-animation: rotating-function 21.25s linear infinite reverse;
+       -o-animation: rotating-function 21.25s linear infinite reverse;
+          animation: rotating-function 21.25s linear infinite reverse;
+}
+
+@-webkit-keyframes rotating-function {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotating-function {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes rotating-function {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes rotating-function {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating-function {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotating-reverse {
+  -webkit-animation: rotating-function 21.25s linear infinite;
+     -moz-animation: rotating-function 21.25s linear infinite;
+      -ms-animation: rotating-function 21.25s linear infinite;
+       -o-animation: rotating-function 21.25s linear infinite;
+          animation: rotating-function 21.25s linear infinite;
+}
+
+@-webkit-keyframes rotating-reverse-function {
+  from {
+    -webkit-transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-moz-keyframes rotating-reverse-function {
+  from {
+    -moz-transform: rotate(360deg);
+  }
+  to {
+    -moz-transform: rotate(0deg);
+  }
+}
+
+@-ms-keyframes rotating-reverse-function {
+  from {
+    -ms-transform: rotate(360deg);
+  }
+  to {
+    -ms-transform: rotate(0deg);
+  }
+}
+
+@-o-keyframes rotating-reverse-function {
+  from {
+    -o-transform: rotate(360deg);
+  }
+  to {
+    -o-transform: rotate(0deg);
+  }
+}
+
+@keyframes rotating-reverse-function {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+/*.eye img{
+    width: 200px;
+        height: 180px;
+        padding: 20px;
+        position: absolute;
+        top: 50%; left: 50%;
+        margin-left: -110px;  (width + padding)/2 
+        margin-top: -110px;  (height + padding)/2 
+}*/
+</style>
+<div class="rotating main-image">
+</div>
+<div class="rotating-reverse main-image2">
+</div>

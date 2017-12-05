@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="http://coothead.co.uk/images/">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+<title>untitled document</title>
+<!--<link rel="stylesheet" href="screen.css" media="screen">-->
+<style media="screen">
+body {
+    background-color: #f0f0f0;
+    font: 1em/1.62em arial, helvetica, sans-serif;
+ }
+#box {
+    position: relative;
+    width: 60vw;
+    height: 35.4vw;
+    border: 0.1em solid #000;
+    margin: auto;
+    background-image: url(Trippy04.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    box-shadow: 0.4vw 0.4vw 0.4vw #999;
+    animation: rotatebg 8s ease-in-out infinite;
+ }
+#box span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2em;
+    color: #f93;
+    text-shadow: 0 0 0.1em #000, 0 0 0.2em #000, 0 0 0.3em #000, 0 0 0.4em #000;
+    white-space: nowrap;
+ }
+@keyframes rotatebg {
+    0%    {background-position: 0 0, 0 0, 0 0;}
+    37.5% {background-position: 0 0, 0 0, 0 0;}
+    50%   {background-position: -60vw 0, 0 0, 0 0;}
+    87.5% {background-position: -60vw 0, 0 0, 0 0;}
+    100%  {background-position: -60vw 0, -60vw 0, 0 0;}
+ }
+</style>
+</head>
+<body> 
+ <div id="box">
+  <span>Lorem Ipsum</span>
+ </div>
+</body>
+</html>
